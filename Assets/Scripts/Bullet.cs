@@ -6,6 +6,7 @@ public class Bullet : MonoBehaviour
 {
    private Rigidbody2D rb;
 
+    public GameObject enemy_base;
     private Vector2 destination = new Vector2(1.2f, 2);
 
     public void Set_destination(Vector2 dest) {

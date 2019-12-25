@@ -5,6 +5,7 @@ using UnityEngine;
 public class Main : MonoBehaviour {
     public GameObject spawner;
 
+
     private void add_spawner(Vector2 pos){
         spawner = GameObject.Instantiate(spawner, pos, Quaternion.identity) as GameObject;
     }
@@ -15,11 +16,10 @@ public class Main : MonoBehaviour {
         }
     }
     void Start(){
-        
     }
 
     // Update is called once per frame
     void Update(){
-    check_pointer_click();
+        check_pointer_click();
     }
 }
